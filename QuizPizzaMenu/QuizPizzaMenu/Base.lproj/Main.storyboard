@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1a-za-f2V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Farah.ttc">
+            <string>Farah</string>
+        </array>
+        <array key="Futura.ttc">
+            <string>Futura-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="jSs-8j-prK">
+            <objects>
+                <tableViewController id="G1a-za-f2V" customClass="TableViewController" customModule="QuizPizzaMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Lg-8B-l4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellMakanan" rowHeight="125" id="S5K-S2-qWA" customClass="TableViewCell" customModule="QuizPizzaMenu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S5K-S2-qWA" id="beQ-UD-Qhz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margeritha Pizza" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZY-hJ-wwP">
+                                            <rect key="frame" x="8" y="0.0" width="204" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="NOl-0I-okL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                            <color key="textColor" red="0.32031959271342569" green="1" blue="0.65155038088154826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3T-DT-EHn">
+                                            <rect key="frame" x="293.5" y="0.0" width="73.5" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="81P-hM-Rfu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpo-49-51k">
+                                            <rect key="frame" x="8" y="78" width="359" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="1b0-fi-3ud"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="45"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qpo-49-51k" firstAttribute="trailing" secondItem="beQ-UD-Qhz" secondAttribute="trailingMargin" id="1ne-Jg-mj5"/>
+                                        <constraint firstAttribute="trailing" secondItem="f3T-DT-EHn" secondAttribute="trailing" constant="8" id="G9m-QM-I5i"/>
+                                        <constraint firstItem="ZZY-hJ-wwP" firstAttribute="leading" secondItem="beQ-UD-Qhz" secondAttribute="leading" constant="8" id="ZBo-aW-R6D"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZZY-hJ-wwP" secondAttribute="trailing" constant="20" symbolic="YES" id="auh-TE-Hrz"/>
+                                        <constraint firstItem="qpo-49-51k" firstAttribute="leading" secondItem="beQ-UD-Qhz" secondAttribute="leadingMargin" id="cMe-nq-PX1"/>
+                                        <constraint firstItem="qpo-49-51k" firstAttribute="top" secondItem="ZZY-hJ-wwP" secondAttribute="bottom" constant="36" id="e8O-E2-XUb"/>
+                                        <constraint firstItem="f3T-DT-EHn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="beQ-UD-Qhz" secondAttribute="leading" id="grx-DW-VzW"/>
+                                        <constraint firstItem="ZZY-hJ-wwP" firstAttribute="top" secondItem="beQ-UD-Qhz" secondAttribute="top" id="kAV-PG-iQm"/>
+                                        <constraint firstItem="qpo-49-51k" firstAttribute="top" secondItem="f3T-DT-EHn" secondAttribute="bottom" constant="36" id="qcc-DB-zwG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qpo-49-51k" secondAttribute="bottom" constant="7.5" id="xJl-RA-reI"/>
+                                        <constraint firstItem="f3T-DT-EHn" firstAttribute="top" secondItem="beQ-UD-Qhz" secondAttribute="top" id="xz6-7u-qiP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.26149152341910087" green="0.24251588855560025" blue="1" alpha="0.83861301369863017" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="namse" destination="ZZY-hJ-wwP" id="FqV-Du-X3d"/>
+                                    <outlet property="priec" destination="qpo-49-51k" id="Kpe-Jt-jDB"/>
+                                    <outlet property="specila" destination="f3T-DT-EHn" id="wUS-Dt-QhL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G1a-za-f2V" id="U8G-5w-POk"/>
+                            <outlet property="delegate" destination="G1a-za-f2V" id="qpz-YD-yQn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umA-7d-hOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.399999999999999" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>
